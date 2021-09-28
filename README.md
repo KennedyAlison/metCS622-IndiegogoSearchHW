@@ -31,7 +31,7 @@
 * ArrayLists are used to store the files, zip files, and search objects. The ArrayList can then easily be iterated through to unzip the files, merge the files and store search criteria when the user searches for keywords within a file 
 * A HashSet is utilized to store the search terms. Sets do not allow duplication and a set can easily be searched to determine whether a word is already in the set or not 
 
-##Assumptions
+## Assumptions
 * The assumption is made that the files in each of the zip files are csv files 
 * The assumption is made that projectIDs are unique and therefore duplicate IDs are filtered out when the files are merged 
 * The assumption is made that one keyword is searched at a time and the keyword is searched throughout all columns in the csv as well as a part of any word, meaning it does not have to be an exact match. For example, when searching "robot", any valid string containing the characters "robot" will be returned, e.g. "mrrobot" or "robotics". 
